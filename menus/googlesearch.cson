@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle yahoosearch'
+      'command': 'yahoosearch:yahoo-it'
+    }
+  ]
+'menu': [
+  {
+    'label': 'My Packages'
+    'submenu': [
+      'label': 'yahoo Search'
+      'submenu': [
+        {
+          'label': 'Search'
+          'command': 'yahoosearch:yahoo-it'
+        }
+      ]
+    ]
+  }
+]
